@@ -20,6 +20,6 @@ fun main () {
         feeFinal = (moneyTransfer * 75U) / 10000U
     }
 
-    println("Сумма перевода: $amount копеек, с учетом комиссии: $feeFinal копеек")
+    println("Сумма перевода: $amount копеек, с учетом комиссии: $feeFinal копеек.")
 
 }
