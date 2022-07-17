@@ -12,16 +12,16 @@ fun main () {
 
     var moneyTransfer = readLine()?.toUInt() ?: return
 
-    if (moneyTransfer <= ((FEE_MONEY / 75U) * 10000U)) {
+    if (moneyTransfer <= 1000_00U) {
         moneyTransferFinal = moneyTransfer - 35_00U
 
         feeFinal = 35_00U
     } else {
-        moneyTransferFinal = moneyTransfer - ((moneyTransfer / 75U) * 10000U)
+        moneyTransferFinal = moneyTransfer - ((moneyTransfer * 75U) / 10000U)
 
-        feeFinal = (moneyTransfer / 75U) * 10000U
+        feeFinal = (moneyTransfer * 75U) / 10000U
     }
 
-    println("Сумма перевода: $moneyTransferFinal, с учетом комиссии: $feeFinal")
+    println("Сумма перевода: $moneyTransferFinal копеек, с учетом комиссии: $feeFinal копеек")
 
 }
