@@ -30,8 +30,8 @@ fun main() {
         }
     }
 
-    println("Первоначальная сумма покупки: ${purchase / 100} рублей ${purchase % 100} копеек")
-    println("Скидка: ${(purchase - purchaseFinal) / 100} рублей ${(purchase - purchaseFinal) % 100} копеек")
-    println("Итоговая сумма покупки: ${purchaseFinal / 100} рублей ${purchaseFinal % 100} копеек")
+    println("Первоначальная сумма покупки: ${purchase / 100} рублей ${purchase % 100} копеек.")
+    println("Скидка: ${(purchase - purchaseFinal) / 100} рублей ${(purchase - purchaseFinal) % 100} копеек.")
+    println("Итоговая сумма покупки: ${purchaseFinal / 100} рублей ${purchaseFinal % 100} копеек.")
 
 }
