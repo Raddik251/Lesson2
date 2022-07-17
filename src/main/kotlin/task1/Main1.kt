@@ -4,7 +4,7 @@ const val FEE_MONEY = 35_00U
 
 fun main () {
 
-    var moneyTransferFinal = 0U
+    var amount = 0U
 
     var feeFinal = 0U
 
@@ -13,15 +13,15 @@ fun main () {
     var moneyTransfer = readLine()?.toUInt() ?: return
 
     if (moneyTransfer <= 1000_00U) {
-        moneyTransferFinal = moneyTransfer - 35_00U
+        amount = moneyTransfer - 35_00U
 
         feeFinal = 35_00U
     } else {
-        moneyTransferFinal = moneyTransfer - ((moneyTransfer * 75U) / 10000U)
+        amount = moneyTransfer - ((moneyTransfer * 75U) / 10000U)
 
         feeFinal = (moneyTransfer * 75U) / 10000U
     }
 
-    println("Сумма перевода: $moneyTransferFinal копеек, с учетом комиссии: $feeFinal копеек")
+    println("Сумма перевода: $amount копеек, с учетом комиссии: $feeFinal копеек")
 
 }
