@@ -1,7 +1,5 @@
 package task1
 
-const val FEE_MONEY = 35_00U
-
 fun main () {
 
     var amount = 0U
